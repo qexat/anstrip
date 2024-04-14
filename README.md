@@ -1,5 +1,7 @@
 # anstrip
 
+[![PyPI](https://img.shields.io/pypi/v/anstrip)](https://pypi.org/project/anstrip/)
+
 anstrip is a minimal library to strip ANSI sequences from strings.
 
 It provides:

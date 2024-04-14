@@ -1,0 +1,21 @@
+[project]
+name = "anstrip"
+description = "anstrip is a minimal library to strip ANSI sequences from strings."
+version = "0.1.0-1"
+readme = "README.md"
+keywords = ["ansi", "escape sequence", "SGR", "ECMA", "strip"]
+requires-python = ">=3.10"
+
+[project.license]
+file = "LICENSE"
+
+[[project.authors]]
+name = "Qexat"
+email = "contact@qexat.com"
+
+[project.urls]
+source = "https://github.com/qexat/anstrip"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

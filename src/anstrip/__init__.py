@@ -19,7 +19,7 @@ __all__ = [
     "PATTERN",
     "strip",
     "auto_strip",
-    "auto_print",
+    "print",
     "printed_length",
 ]
 
@@ -86,7 +86,7 @@ def auto_strip(
     return decorator
 
 
-def auto_print(
+def print(
     *values: object,
     sep: str | None = None,
     end: str | None = None,

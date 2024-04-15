@@ -104,7 +104,7 @@ def auto_strip[**P](
     '42'
     """
 
-def auto_print(
+def print(
     *values: object,
     sep: str | None = None,
     end: str | None = None,

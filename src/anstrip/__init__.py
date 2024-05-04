@@ -9,6 +9,7 @@ It provides:
 - `printed_length`, a function that returns the length of the string as seen on the screen
 """
 
+import builtins as _builtins
 import collections.abc
 import functools
 import re
@@ -101,7 +102,13 @@ def print(
     def str_and_auto_strip(value: object) -> str:
         return typing.cast(str, auto_strip(str(value), output=file))
 
-    print(*map(str_and_auto_strip, values), sep=sep, end=end, file=file, flush=flush)
+    _builtins.print(
+        *map(str_and_auto_strip, values),
+        sep=sep,
+        end=end,
+        file=file,
+        flush=flush,
+    )
 
 
 def printed_length(string: str) -> int:
